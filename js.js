@@ -1,29 +1,34 @@
-'strict';
+/* 'use strict';
+const hamburger = true;
+const fries = true;
 
-/* if (4==4) {
-    console.log('Ok!');
+if (hamburger && fries) {
+    console.log('Сыт!');
+}
+
+console.log((hamburger && fries)); */
+//результат логических операций это какоето логическое булевое значение.
+
+//если одно из блюд будет отсутствовать получим фолс
+/* const hamburger = true;
+const fries = false;
+
+if (hamburger && fries) {
+    console.log('Сыт!');
+}
+
+console.log((hamburger && fries)); */
+//получим false
+
+const hamburger = 2;
+const fries = 1;
+
+if (hamburger === 3 && fries) {
+    console.log('Все сыты!');
 } else {
-    console.log('Error!');
+    console.log('Мы уходим!');
 }
 
-const num = 50;
 
-(num === 50) ? console.log('Ok!') : console.log('Error'); */
-
-const num = 50;
-// switch конструкци котора поддерживает проверку нескольких  условий
-switch (num) {
-    case 49:
-        console.log('неверно');
-        break;
-    case 100:
-        console.log('неверно');
-        break;
-    case 50:
-        console.log('В точку!');
-        break;
-    default: 
-        console.log('Не в этот раз');
-        break;
-    
-}
+//hamburger === 3 эта часть выполнетс первой, далее выполнеетс сравнение && 
+//лева часть правда, права часть неправда
